@@ -12,13 +12,12 @@ function setupPad() {
     }
 }
 
+function randColor() {
+    return Math.floor(Math.random() * 360);
+}
+
 function updatePixelColor(e) {
-    let color = e.target.style.backgroundColor;
-    if (color == 'black') {
-        e.target.style.backgroundColor = 'white';
-    } else {
-        e.target.style.backgroundColor = 'black';
-    }
+    e.target.style.backgroundColor = `hsl(${randColor()}, 100%, 50%)`;
 }
 
 function removePixels() {
