@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.pixel-container {
+    aspect-ratio: 1 / 1;
+    width: 720px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pixel {
+    aspect-ratio: 1 / 1;
+    width: 43px;
+    border: white solid 1px;
+}
