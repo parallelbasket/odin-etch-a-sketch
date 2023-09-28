@@ -20,13 +20,6 @@ function updatePixelColor(e) {
     e.target.style.backgroundColor = `hsl(${randColor()}, 100%, 50%)`;
 }
 
-function removePixels() {
-    const pixels = document.querySelectorAll('.pixel');
-    pixels.forEach(pixel => {
-        pixel.remove();
-    });
-}
-
 function getWidth() {
     containerWidth = prompt("Update 'Etch-a-Sketch' pixel width:");
     if (containerWidth > 100) {
@@ -35,8 +28,15 @@ function getWidth() {
     }
 }
 
+function removePixels() {
+    const pixels = document.querySelectorAll('.pixel');
+    pixels.forEach(pixel => {
+        pixel.remove();
+    });
+}
+
 function updatePixelWidth() {
-    let pixelSize = 720 / containerWidth;
+    let pixelSize = PADWIDTH / containerWidth;
     const pixels = document.querySelectorAll('.pixel');
     pixels.forEach(pixel => {
         pixel.style.width = pixelSize.toString() + 'px';
