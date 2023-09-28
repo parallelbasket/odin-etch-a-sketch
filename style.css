@@ -1,6 +1,7 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pixel-container {
@@ -10,10 +11,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     border: black solid 8px;
+    margin: 20px;
 }
 
 .pixel {
     aspect-ratio: 1 / 1;
     width: 45px;
     background-color: white;
+}
+
+button{
+    background-color: white;
+    border: black 1px solid;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
