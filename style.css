@@ -6,13 +6,14 @@ body {
 .pixel-container {
     aspect-ratio: 1 / 1;
     width: 720px;
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
+    border: black solid 8px;
 }
 
 .pixel {
     aspect-ratio: 1 / 1;
-    width: 43px;
-    border: white solid 1px;
+    width: 45px;
+    background-color: white;
 }
